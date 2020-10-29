@@ -1,0 +1,248 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+<head th:replace="plantilla/index :: head">
+
+</head>
+<body id="color">
+
+	<header th:replace="plantilla/index :: header"> </header>
+
+	<div id="accordion">
+		<div class="card">
+			<div class="card-header" id="color">
+				<h5 class="mb-0">
+					<button class="btn btn-link" data-toggle="collapse"
+						data-target="#collapseOne" aria-expanded="true"
+						aria-controls="collapseOne">Buscar actividad</button>
+				</h5>
+			</div>
+
+			<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+				data-parent="#accordion">
+				<div class="card-body table-responsive">
+					<table class="table table-striped">
+						<thead class="bg-primary">
+							<tr>
+								<th scope="col">ID</th>
+								<th scope="col">JUEGO</th>
+								<th scope="col">FECHA</th>
+								<th scope="col">HORA</th>
+								<th scope="col">UBICACION</th>
+								<th scope="col"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>xxxx</td>
+								<td>xxxx</td>
+								<td>xxxxx</td>
+								<td>xxxx</td>
+								<td><button type="button" class="btn btn-success btn-sm">Participar</button></td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>xxxxx</td>
+								<td>xxxxxxx</td>
+								<td>xxxxx</td>
+								<td>xxxx</td>
+								<td><button type="button" class="btn btn-success btn-sm">Participar</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" id="color">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse"
+						data-target="#collapseTwo" aria-expanded="false"
+						aria-controls="collapseTwo">Crear actividad</button>
+				</h5>
+			</div>
+			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+				data-parent="#accordion">
+				<div class="card-body table-responsive">
+					<table class="table ">
+						<tr>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="text" class="form-control"
+									placeholder="Selecionar juego"></td>
+									<td><input type="text" class="form-control"
+									placeholder="Seleccionar fecha"></td>
+								<td><input type="text" class="form-control"
+									placeholder="Seleccionar hora"></td>
+								<td><input type="text" class="form-control"
+									placeholder="Seleccionar ubicación"></td>
+								<td><button type="button" class="btn btn-success ">Solicitar</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" id="color">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse"
+						data-target="#collapseThree" aria-expanded="false"
+						aria-controls="collapseThree">Historial de las solicitudes</button>
+				</h5>
+			</div>
+			<div id="collapseThree" class="collapse"
+				aria-labelledby="headingThree" data-parent="#accordion">
+				<div class="card-body table-responsive">
+					<table class="table table-striped">
+						<thead class="bg-primary">
+							<tr>
+								<th scope="col">ID</th>
+								<th scope="col">JUEGO</th>
+								<th scope="col">FECHA</th>
+								<th scope="col">HORA</th>
+								<th scope="col">UBICACION</th>
+								<th scope="col">ROL</th>
+								<th scope="col">ESTADO</th>
+								<th scope="col"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>xxxx</td>
+								<td>xxxxxx</td>
+								<td>xxxxxx</td>
+								<td>xxxxx</td>
+								<td>xxxxx</td>
+								<td>xxxxx</td>
+								<td><button type="button" class="btn btn-danger btn-sm">Abandonar</button></td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>xxxx</td>
+								<td>xxxxxx</td>
+								<td>xxxxxx</td>
+								<td>xxxxx</td>
+								<td>xxxxx</td>
+								<td>xxxxx</td>
+								<td><button type="button" class="btn btn-danger btn-sm">Abandonar</button></td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card">
+			<div class="card-header" id="color">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse"
+						data-target="#collapseFive" aria-expanded="false"
+						aria-controls="collapseFive">Historial de actividades</button>
+				</h5>
+			</div>
+			<div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+				data-parent="#accordion">
+				<div class="card-body table-responsive">
+					<table class="table table-striped">
+						<thead class="bg-primary">
+							<tr>
+								<th scope="col">ID</th>
+								<th scope="col">JUEGO</th>
+								<th scope="col">FECHA</th>
+								<th scope="col">UBICACION</th>
+								<th scope="col">VALORAR ACTIVIDAD</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>XXXXX</td>
+								<td>XXXXX</td>
+								<td>XXXXX</td>
+								<td ><p class="clasificacion">
+										<input id="radio1" type="radio" name="estrellas" value="5">
+										<label for="radio1">★</label> <input id="radio2" type="radio"
+											name="estrellas" value="4"> <label for="radio2">★</label>
+										<input id="radio3" type="radio" name="estrellas" value="3">
+										<label for="radio3">★</label> <input id="radio4" type="radio"
+											name="estrellas" value="2"> <label for="radio4">★</label>
+										<input id="radio5" type="radio" name="estrellas" value="1">
+										<label for="radio5">★</label>
+										 
+									</p></td>
+									<td><button type="button" class="btn btn-success btn-sm">Envíar</button></td>
+							</tr>
+							
+							<tr>
+								<th scope="row">2</th>
+								<td>XXXX</td>
+								<td>XXXXX</td>
+								<td>XXXXX</td>
+								<td><p class="clasificacion">
+										<input id="radio1" type="radio" name="estrellas" value="5">
+										<label for="radio1">★</label> <input id="radio2" type="radio"
+											name="estrellas" value="4"> <label for="radio2">★</label>
+										<input id="radio3" type="radio" name="estrellas" value="3">
+										<label for="radio3">★</label> <input id="radio4" type="radio"
+											name="estrellas" value="2"> <label for="radio4">★</label>
+										<input id="radio5" type="radio" name="estrellas" value="1">
+										<label for="radio5">★</label>
+									</p></td>
+									<td><button type="button" class="btn btn-success btn-sm">Envíar</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" id="color">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse"
+						data-target="#collapseFour" aria-expanded="false"
+						aria-controls="collapseTwo">Editar perfil</button>
+				</h5>
+			</div>
+			<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+				data-parent="#accordion">
+				<div class="card-body table-responsive">
+					<table class="table ">
+						<tr>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="text" class="form-control"
+									placeholder="Email"></td>
+								<td><input type="text" class="form-control"
+									placeholder="Teléfono"></td>
+								<td><input type="text" class="form-control"
+									placeholder="Contraseña"></td>
+								<td><button type="button" class="btn btn-success ">Editar</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	<br><br><br><br>
+
+
+	<footer th:replace="plantilla/index :: footer"></footer>
+
+</body>

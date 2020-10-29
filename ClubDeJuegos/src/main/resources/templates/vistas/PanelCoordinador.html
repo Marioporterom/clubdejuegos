@@ -1,0 +1,293 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html style="background-color: #FFFFFF">
+
+<head th:replace="plantilla/index :: head">
+
+</head>
+<body id="color">
+
+	<header th:replace="plantilla/index :: header"> </header>
+
+	<div id="accordion">
+		<div class="card">
+			<div class="card-header" id="color">
+				<h5 class="mb-0">
+					<button class="btn btn-link" data-toggle="collapse"
+						data-target="#collapseOne" aria-expanded="true"
+						aria-controls="collapseOne">Lista de solicitudes de
+						partidas del centro</button>
+				</h5>
+			</div>
+
+			<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+				data-parent="#accordion">
+				<div class="card-body table-responsive">
+					<table class="table table-striped">
+						<thead class="bg-primary">
+							<tr>
+								<th scope="col">ID</th>
+								<th scope="col">ORGANIZADOR</th>
+								<th scope="col">JUEGO</th>
+								<th scope="col">FECHA</th>
+								<th scope="col">HORA</th>
+								<th scope="col">OPCIONES</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>xxxx</td>
+								<td>xxxx</td>
+								<td>xxxxx</td>
+								<td>xxxx</td>
+								<td><button type="button" class="btn btn-success btn-sm">Aceptar</button>
+									<button type="button" class="btn btn-danger btn-sm">Rechazar</button></td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>xxxxx</td>
+								<td>xxxxxxx</td>
+								<td>xxxxx</td>
+								<td>xxxx</td>
+								<td><button type="button" class="btn btn-success btn-sm">Aceptar</button>
+									<button type="button" class="btn btn-danger btn-sm">Rechazar</button></td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>xxxx</td>
+								<td>xxxxxx</td>
+								<td>xxxxxx</td>
+								<td>xxxxx</td>
+								<td><button type="button" class="btn btn-success btn-sm">Aceptar</button>
+									<button type="button" class="btn btn-danger btn-sm">Rechazar</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" id="color">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse"
+						data-target="#collapseTwo" aria-expanded="false"
+						aria-controls="collapseTwo">Usuarios del centro</button>
+				</h5>
+			</div>
+			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+				data-parent="#accordion">
+				<div class="card-body table-responsive">
+					<table class="table table-striped w-auto">
+						<thead class="bg-primary">
+							<tr>
+								<th scope="col">ID</th>
+								<th scope="col">NOMBRE</th>
+								<th scope="col">EMAIL</th>
+								<th scope="col">TELEFONO</th>
+								<th scope="col">CENTRO</th>
+								<th scope="col">ROL</th>
+								<th scope="col">OPCIONES</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>xxxx</td>
+								<td>xxxxx</td>
+								<td>xxxxxx</td>
+								<td>xxxx</td>
+								<td>xxxxxx</td>
+								<td><button type="button" class="btn btn-success btn-sm">Editar</button>
+									<button type="button" class="btn btn-danger btn-sm">Eliminar</button></td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>xxxxxxx</td>
+								<td>xxxxx</td>
+								<td>xxxxx</td>
+								<td>xxxxx</td>
+								<td>xxxxx</td>
+								<td><button type="button" class="btn btn-success btn-sm">Editar</button>
+									<button type="button" class="btn btn-danger btn-sm">Eliminar</button></td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>xxxxxxx</td>
+								<td>xxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxx</td>
+								<td>xxxxxx</td>
+								<td><button type="button" class="btn btn-success btn-sm">Editar</button>
+									<button type="button" class="btn btn-danger btn-sm">Eliminar</button></td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" id="color">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse"
+						data-target="#collapseThree" aria-expanded="false"
+						aria-controls="collapseThree">Juegos del centro</button>
+				</h5>
+			</div>
+			<div id="collapseThree" class="collapse"
+				aria-labelledby="headingThree" data-parent="#accordion">
+				<div class="card-body table-responsive">
+					<table class="table table-striped">
+						<thead class="bg-primary">
+							<tr>
+								<th scope="col">ID</th>
+								<th scope="col">NOMBRE</th>
+								<th scope="col">MIN. JUGADORES</th>
+								<th scope="col">MAX. JUGADORES</th>
+								<th scope="col">STOCK</th>
+								<th scope="col">OPCIONES</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>xxxx</td>
+								<td>xxxxxx</td>
+								<td>xxxxxx</td>
+								<td>xxxxx</td>
+								<td><button type="button" class="btn btn-success btn-sm">Modificar</button>
+									<button type="button" class="btn btn-danger btn-sm">Eliminar</button></td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>xxxx</td>
+								<td>xxxxxx</td>
+								<td>xxxxxx</td>
+								<td>xxxxx</td>
+								<td><button type="button" class="btn btn-success btn-sm">Modificar</button>
+									<button type="button" class="btn btn-danger btn-sm">Eliminar</button></td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" id="color">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse"
+						data-target="#collapseFour" aria-expanded="false"
+						aria-controls="collapseTwo">Crear usuarios nuevos</button>
+				</h5>
+			</div>
+			<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+				data-parent="#accordion">
+				<div class="card-body table-responsive">
+					<table class="table ">
+						<tr>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr>
+
+								<td><input type="text" class="form-control"
+									placeholder="Nombre"></td>
+								<td><input type="text" class="form-control"
+									placeholder="Email"></td>
+								<td><input type="text" class="form-control"
+									placeholder="Teléfono"></td>
+								<td><input type="text" class="form-control"
+									placeholder="Contraseña"></td>
+								<td><input type="text" class="form-control"
+									placeholder="Rol"></td>
+								<td><button type="button" class="btn btn-success ">Añadir</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" id="color">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse"
+						data-target="#collapseFive" aria-expanded="false"
+						aria-controls="collapseFive">Jugadores mejor valorados
+						del centro</button>
+				</h5>
+			</div>
+			<div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+				data-parent="#accordion">
+				<div class="card-body table-responsive">
+					<table class="table table-striped">
+						<thead class="bg-primary">
+							<tr>
+								<th scope="col">ID</th>
+								<th scope="col">NOMBRE</th>
+								<th scope="col">VAL. MEDIA</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>XXXXX</td>
+								<td>3.5</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>XXXX</td>
+								<td>5.5</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" id="color">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse"
+						data-target="#collapseSix" aria-expanded="false"
+						aria-controls="collapseSix">Juegos mejor valorados del
+						centro</button>
+				</h5>
+			</div>
+			<div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+				data-parent="#accordion">
+				<div class="card-body table-responsive">
+					<table class="table table-striped">
+						<thead class="bg-primary">
+							<tr>
+								<th scope="col">ID</th>
+								<th scope="col">JUEGO</th>
+								<th scope="col">VAL. MEDIA</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>XXXXX</td>
+								<td>3.5</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>XXXX</td>
+								<td>5.5</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+
+	<footer th:replace="plantilla/index :: footer"></footer>
+
+</body>

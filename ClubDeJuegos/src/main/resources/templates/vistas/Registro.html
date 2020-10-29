@@ -1,0 +1,49 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<html >
+  <head th:replace="plantilla/index :: head">
+
+</head>
+<link rel="stylesheet" href="css/login.css">
+  <body background="images/fondo.jpg">
+  <header th:replace="plantilla/index :: header"> </header>
+     <div class="container">
+        <div class="row text-center login-page">
+	   <div class="col-md-12 login-form" style="background-color:#FBEFFB">
+	      <form action="claseDestino.php" method="post"> 			
+	         <div class="row">
+		    <div class="col-md-12 login-form-header">
+		       <p class="login-form-font-header"><span>Registro</span><p>
+		    </div>
+		</div>
+		<div class="row">
+		   <div class="col-md-12 login-from-row">
+		      <input name="Nombre" type="text" placeholder="Nombre" required/>
+		   </div>
+		</div>
+		<div class="row">
+		   <div class="col-md-12 login-from-row">
+		      <input name="Email" type="password" placeholder="Email" required/>
+		   </div>
+		</div>
+		<div class="row">
+		   <div class="col-md-12 login-from-row">
+		      <input name="Centro" type="text" placeholder="Centro" required/>
+		   </div>
+		</div>
+		<div class="row">
+		   <div class="col-md-12 login-from-row">
+		      <input name="Contraseña" type="password" placeholder="Contraseña" required/>
+		   </div>
+		</div>
+		<div class="row">
+		   <div class="col-md-12 login-from-row">
+		      <button class="btn btn-info">Registrarse</button>
+		   </div>
+		</div>
+	    </form>
+	</div>
+     </div>
+  </div>
+  <footer th:replace="plantilla/index :: footer"></footer>
+</body>
+</html>
